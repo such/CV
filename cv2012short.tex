@@ -1,0 +1,170 @@
+\newif\iffr
+\newif\ifen
+
+\frtrue
+
+\input{personal_details.tex}
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{adrien}
+\moderncvcolor{006D80}  
+\usepackage[francais, english]{babel} 
+\usepackage[utf8]{inputenc}	   %% les accents dans le fichier.tex
+%\usepackage[?]{?}1]{fontenc}       %% Pour la césure des mots accentués
+\usepackage{hyperref}
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2cm} 
+\geometry{vmargin=25pt,hmargin=40pt}
+\usepackage{multicol}
+
+\newcommand{\langfr}[1]{%
+  \iffr\selectlanguage{french}#1\fi}
+\newcommand{\langen}[1]{%
+  \ifen\selectlanguage{english}#1\fi}
+
+\firstname{Adrien}
+\familyname{Montfort}
+\langfr{\title{Développeur Backend}}
+\langen{\title{Backend developer}}
+
+\address{16 rue Saint Vincent de Paul}{75010 Paris}
+\mobile{\phonenumber}                     
+\email{\emailaddress}               
+\langfr{\extrainfo{Né le 27/08/1984}}
+\langen{\extrainfo{Born 08/27/1984}}
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+\langfr{\section{Formation}}
+\langen{\section{Education}}
+
+\langfr{\cventry{2004 -- 2008}{Dipl\^{o}me d'ingénieur}{Télécom Sud Paris}{Evry}{}{}}
+\langen{\cventry{2004 -- 2008}{Master's degree in IT Engineering}{Télécom Sud Paris}{Evry}{}{}}
+\langfr{\cventry{2007}{Specialization semester en \textit{Data Engineering}}{Université d'Aalborg}{Danemark}{}{Distributed systems, Programming paradigm, Machine learning}}
+\langen{\cventry{2002 -- 2004}{Preparation for national competitive entrance exams to leading French \og grandes écoles \fg}{Lycée Michel Montaigne}{Bordeaux}{specializing in math and physics}{}}
+\langfr{\cventry{2002}{Baccalauréat Scientifique}{Lycée Jean Monnet}{Cognac}{option mathématiques, mention trés bien}{}}
+\langen{\cventry{2002}{GCSE}{Lycée Jean Monnet}{Cognac}{Advanced level in math and physics, with honours}{}}
+
+\vspace*{-0.5em}
+\langfr{\section{Expérience Professionnelle}}
+\langen{\section{Professional experience}}
+\langfr{\cventry{2012}{Développeur Backend}{GGFactor}{Paris}{}{Au sein d'un jeune studio de jeux video, architecture et développement d'un backend scalable.
+\begin{itemize}
+\item Industrialisation ;
+\item Intégration des nouvelles fonctionnalités.
+\end{itemize}
+\textbf{Environnement} Ruby 1.9, Couchbase (No SQL), Sinatra, Puppet, Thin / Rainbows, Nginx, RSpec.}}
+
+\langen{\cventry{2012}{Backend Engineer}{GGFactor}{Paris}{}{In small video game studio, architecture and development of a scalable backend.
+\begin{itemize}
+\item Industrialisation ;
+\item New features integration.
+\end{itemize}
+\textbf{Environment} Ruby 1.9, Couchbase (No SQL), Sinatra, Puppet, Thin / Rainbows, Nginx, RSpec.}}
+
+\langfr{\cventry{2011 -- 2012}{Mission chez BNP Arbitrage}{au sein d'Invivoo}{Paris}{}{Maintenance et développement de l'application Power, référentiel Deals, Produits et Positions. Application déployée à Paris, New York et Hong Kong.
+\begin{itemize}
+\item Maintenance applicative ;
+\item En charge des revues de code (12 développeurs) et des refactorisations. Part active dans le recrutement.
+\end{itemize}
+\textbf{Environnement} Java EE, Spring, Hibernate, JUnit, TestNG, Oracle, Weblogic, Maven, CVS, Python, Groovy, Lean/Scrum, TDD.}}
+
+\langen{\cventry{2011 -- 2012}{Mission in BNP Arbitrage}{with Invivoo}{Paris}{}{Maintenance et development of Power: Deals, Products et Positions referential. Application deployed in Paris, New York City and Hong Kong.
+\begin{itemize}
+\item Maintenance ;
+\item In charge of code review (12 developers) and refactoring. Recruiting team.
+\end{itemize}
+\textbf{Environment} Java EE, Spring, Hibernate, JUnit, TestNG, Oracle, Weblogic, Maven, CVS, Python, Groovy, Lean/Scrum, TDD.}}
+
+\langfr{\cventry{2008 -- 2011}{Mission chez Société Générale CIB}{au sein d'Invivoo}{Paris}{}{Maintenance et développement de l'application RTParam qui fournit des données de marché et de modèle aux applications prétrade. Application déployée à Paris, New York et Hong Kong.
+\begin{itemize}%
+\item Optimisation des accés à la base de données, des temps de démarrage, de l'empreinte mémoire ;
+\item API d'accés client en Java et en \verb!C++!, l'interface graphique Swing. Migration vers Netbeans RCP ;
+\item Change \& Release Management (organisation des livraisons,
+production des livrables) ;
+\item Suivi et investigation des problémes de production. Support.
+\end{itemize}
+\textbf{Environnement} Java, Multithreading, Sybase, Tibco rendez-vous, Unix, Maven, SVN, \verb!C++!.}}
+
+\langen{\cventry{2008 -- 2011}{Mission in Société Générale CIB}{with Invivoo}{Paris}{}{Maintenance and development of RTParam, distributed application that allows access to market and model data for pre-trade applications. Application deployed in Paris, New York City and Hong Kong.
+\begin{itemize}%
+\item Optimization of database access, startup time and memory footprint ;
+\item Client API in Java et en \verb!C++!. Swing graphical interface. Migration to Netbeans RCP ;
+\item Change \& Release Management ;
+\item Follow-up and investigation of production issues. Support.
+\end{itemize}
+\textbf{Environment} Java, Multithreading, Sybase, Tibco rendez-vous, Unix, Maven, SVN, \verb!C++!.}}
+
+\langfr{\cventry{2006 -- 2007}{Année jeune ingénieur}{Adise}{Paris}{}{Développement pour une jeune pousse d'un système de workflow. Structuration des contenus et spécifications d'un logiciel d'aide à la décision pour les médecins généralistes.\newline{}%
+\textbf{Environnement} Java, JSP, Servlet, CSS, JavaScript, Tomcat, MySQL.}}
+
+\langen{\cventry{2006 -- 2007}{Young engineer year}{Adise}{Paris}{}{Development of a workflow management system handling the writing process of scientific articles aimed at general practitionners.\newline{}%
+\textbf{Environment} Java, JSP, Servlet, CSS, JavaScript, Tomcat, MySQL.}}
+
+\langfr{\section{Projets Personnels}}
+\langen{\section{Personnal projects}}
+
+\langfr{\cventry{2012}{Développement de Askalll pour iPhone}{freelance}{}{}{Application sociale destinée à échanger des questions avec la communauté.\newline{}%
+\textbf{Environnement} Objective-C, Node.js, OCMock, Frank, Jenkins}}
+
+\langen{\cventry{2012}{Development of Askalll for iPhone}{freelance}{}{}{Social application used for sharing questions with the community.\newline{}%
+\textbf{Environment} Objective-C, Node.js, OCMock, Frank, Jenkins}}
+
+\langfr{\cventry{2011}{Développement de beWe pour iPhone}{}{}{}{Application sociale basée sur la géolocalisation.\newline{}%
+\textbf{Environnement} Objective-C, Java, Google App Engine, XMPP, Jenkins, iCuke}}
+
+\langen{\cventry{2011}{Development of beWe for iPhone}{}{}{}{Social application based on geolocalization.\newline{}%
+\textbf{Environment} Objective-C, Java, Google App Engine, XMPP, Jenkins, iCuke}}
+
+\langfr{\section{Compétences}}
+\langen{\section{Skills}}
+\vspace*{-1em}
+%
+\begin{tabular}{ll}
+%
+\begin{minipage}{0.6\textwidth}
+\langfr{\subsection{Informatique}}
+\langen{\subsection{Computer}}
+
+\langfr{\cvitem{Langages}{Java EE, Ruby, Objective-C}}
+\langen{\cvitem{Languages}{Java EE, Ruby, Objective-C}}
+%
+\langfr{\cvitem{BDD}{Oracle, Couchbase, Sybase, Procédures stockées}}
+\langen{\cvitem{DB}{Oracle, Couchbase, Sybase, Stored procedures}}
+%
+\cvitem{Frameworks}{Spring, Hibernate, Google App Engine}
+\cvitem{Web}{HTML, CSS, PHP, AJAX, Flash}
+
+\end{minipage}
+
+\begin{minipage}{0.4\textwidth}
+%
+\langfr{\subsection{Langues}}
+\langen{\subsection{Languages}}
+%
+\langfr{\cvlanguage{Français}{Langue maternelle}{}}
+\langen{\cvlanguage{French}{Mother tongue}{}}
+%
+\langfr{\cvlanguage{Anglais}{Courant}{toefl : 109/120}}
+\langen{\cvlanguage{English}{Fluent}{toefl : 109/120}}
+% dirty empty items to fill the space
+\cvitem{}{}
+\cvitem{}{}
+
+\end{minipage}
+
+\end{tabular}
+
+\vspace*{-1em}
+\langfr{\section{Centres d'intér\^{e}ts}}
+\langen{\section{Other activities and outside interests}}
+%
+\langfr{\cvitem{Musique}{Bassiste du groupe \textit{Late Light} -- \url{http://www.facebook.com/wearelatelight}}}
+\langen{\cvitem{Music}{Bass player in \textit{Late Light} -- \url{http://www.facebook.com/wearelatelight}}}
+\langfr{\cvitem{Sport}{Course à pied}}
+\langen{\cvitem{Sport}{Running, swimming}}
+\langfr{\cvitem{Actualités}{Technologie, \'{E}conomie}}
+\langen{\cvitem{News}{Technology, Economy}}
+\end{document}
